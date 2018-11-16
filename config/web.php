@@ -3,13 +3,14 @@
 return [
     'id' => 'school-web',
     'basePath' => realpath(__DIR__ . '/../'),
-    //'sourceLanguage' => 'tr',
-    'language' => 'en',
     'bootstrap' => ['debug'],
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false
+            'showScriptName' => false,
+            'class'=> 'codemix\localeurls\UrlManager',
+            'languages' => ['ru','en'],
+            'enableDefaultLanguageUrlCode' => true
         ],
         'request' => [
             'cookieValidationKey' => 'code'

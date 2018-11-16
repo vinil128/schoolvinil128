@@ -2,5 +2,5 @@
 
 
 return [
-    'Welcome!' => 'Welcome people!'
+    'Welcome!' => 'Welcome!'
 ];
